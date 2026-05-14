@@ -6,6 +6,9 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": false,
     "strict": true,
