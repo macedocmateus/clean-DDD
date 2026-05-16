@@ -74,7 +74,7 @@ export class Question extends Entity<QuestionProps> {
         this.touch()
     }
     
-    static create(props: Optional<QuestionProps, 'createdAt' | 'slug'>, id: UniqueEntityID) {
+    static create(props: Optional<QuestionProps, 'createdAt' | 'slug'>, id?: UniqueEntityID) {
         const question = new Question({
             ...props,
             slug: props.slug ?? Slug.createFromText(props.title),
